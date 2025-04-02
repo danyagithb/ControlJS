@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 100px;
-    padding-block: 40px;
+    gap: 30px;
+    padding-block: 20px;
     padding-inline: 20px;
 }
 
@@ -17,8 +17,9 @@ body {
 #user-details {
     background-color: #90dbfd;
     border-radius: 10px;
-    padding-block: 20px;
-    padding-inline: 100px;
+    width: 50%;
+    height: auto;
+    padding-top: 10px;
 
     font-family: "Poppins", sans-serif;
 
@@ -26,6 +27,100 @@ body {
     border: 2px solid #267fa8;
     box-shadow: 0 0 20px 2px rgba(101, 152, 175, 0.75);
 }
+
+.key-title {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-block: 6px;
+    padding-left: 30px;
+    border-block: 1px solid #6dd0ff;
+    background-color: #81d6ff;
+}
+
+.box-key {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#user-button {
+    width: 90%;
+    padding-block: 15px;
+    background-color: #0c618a;
+    border-radius: 5px;
+    border: 2px solid #022d3c;
+
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all linear .1s;
+}
+
+#user-button:hover {
+    background-color: #5ecafb;
+    color: #022d3c;
+    border: 2px solid #0a5f7c;
+}
+
+
+#post-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.post-box {
+    background-color: #7ad4fd;
+    border: 2px solid #104775;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+    padding-block: 5px;
+    padding-inline: 8px;
+}
+
+.post-text {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.post-button {
+    padding-block: 6px;
+    padding-inline: 15px;
+    background-color: #267fa8;
+    border-radius: 5px;
+    border: 1px solid #136185;
+
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    transition: all linear .1s;
+}
+
+.post-button:hover {
+    background-color: #abe4ff;
+    color: #155370;
+    border: 1px solid #2087b6;
+    font-weight: 700;
+}
+
 
 
 
