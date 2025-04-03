@@ -1,6 +1,72 @@
-.comment-item {
-    border: 1px solid black;
+body {
+    background-color: #fdb4e0;
+    padding-top: 30px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#post-box {
+    width: 30%;
+    height: auto;
+    background-color: #ff99d7;
+    border: 2px solid #a8166e;
+    border-radius: 8px;
+    padding-block: 10px;
+    padding-inline: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 0 11px 3px rgba(255, 118, 204, 0.93);
+}
+
+.post-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: #ffabdd;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+#comments-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-inline: 30px;
+    padding-bottom: 50px;
+}
+
+.title-comment {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.comment-item {
+    background-color: #ff93d3;
+    border: 2px solid #810951;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.comment-item:nth-child(5) {
+    grid-column: 2 / 4;
+    padding-block: 15px;
+}
+
+
+
+
 
 
 

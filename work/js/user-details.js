@@ -44,7 +44,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
                         postButton.classList.add('post-button');
                         postButton.innerText = 'More';
                         postButton.href = `post-details.html?postId=${postItem.id}`;
-                        postButton.setAttribute('target', '_blank');
 
                         postBox.append(postText, postButton)
                         postContainer.appendChild(postBox);

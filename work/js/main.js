@@ -3,7 +3,6 @@ fetch(' https://jsonplaceholder.typicode.com/users')
     .then(users => {
 
         let userContainer = document.getElementById('user-container');
-        // userContainer.innerText = '';
 
         for (const user of users) {
             let userBox = document.createElement('div');
@@ -17,8 +16,6 @@ fetch(' https://jsonplaceholder.typicode.com/users')
             userButton.classList.add('user-button');
             userButton.innerText = 'More';
             userButton.href = `pages/user-details.html?id=${user.id}`;
-
-            userButton.setAttribute('target', '_blank');
 
             userBox.append(userInfo, userButton)
             userContainer.appendChild(userBox);

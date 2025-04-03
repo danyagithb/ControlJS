@@ -23,7 +23,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
             let commentItem = document.createElement('div');
             commentItem.classList.add('comment-item');
             for (const commentKey in comment) {
-                commentItem.innerText = `${commentKey} - ${comment[commentKey]}`;
+                commentItem.innerText = `${comment[commentKey]}`;
                 commentsBox.appendChild(commentItem);
             }
         }
